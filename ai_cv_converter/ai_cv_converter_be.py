@@ -4,7 +4,7 @@ import vertexai
 from vertexai.preview.generative_models import GenerativeModel, Part
 import os
 from dotenv import load_dotenv
-import io
+import json
 from jinja2 import Environment, FileSystemLoader
 
 load_dotenv()
@@ -76,7 +76,7 @@ def get_file_and_add_prompt(request):
             print("text", text)
 
             # Render the template with the JSON data
-            output = template.render(text)
+            output = template.render(json.loads(text))
 
             print("output", output)
 
