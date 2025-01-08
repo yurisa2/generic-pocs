@@ -1,0 +1,107 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "seniority_level": {
+            "type": "string"
+        },
+        "role": {
+            "type": "string"
+        },
+        "summary": {
+            "type": "string"
+        },
+        "skills": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "category": {
+                        "type": "string"
+                    },
+                    "skills": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "category",
+                    "skills"
+                ]
+            }
+        },
+        "education": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "institution": {
+                        "type": "string"
+                    },
+                    "years": {
+                        "type": "string"
+                    },
+                    "degree": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "institution",
+                    "years",
+                    "degree"
+                ]
+            }
+        },
+        "certifications": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "employment_history": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "company": {
+                        "type": "string"
+                    },
+                    "position": {
+                        "type": "string"
+                    },
+                    "years": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "technologies": {
+                        "type": "string"
+                    },
+                    "activities_responsabilities": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "company",
+                    "position",
+                    "years",
+                    "activities_responsabilities"
+                ]
+            }
+        }
+    },
+    "required": [
+        "name",
+        "seniority_level",
+        "role",
+        "summary",
+        "skills",
+        "education",
+        "employment_history"
+    ]
+}
