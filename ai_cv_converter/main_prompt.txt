@@ -4,7 +4,7 @@ Name
 Seniority Level, Junior, middle or Senior
 Role example as: Software Engineer, Full Stack Developer, Frontend Developer, Backend Developer, DevOps Engineer, Data Scientist, Data Analyst, Data Engineer, Machine Learning Engineer, AI Engineer, Cloud Engineer, Cloud Architect, Site Reliability Engineer (SRE), QA Engineer, QA Automation Engineer, QA Tester, QA Analyst, QA Lead, QA Manager, QA Director, QA VP
 
-Create a summary of the candidates professional life, here is an example:
+Create a summary of the candidates professional life, here is an example, make it third person speech:
 A highly skilled Lead Software Engineer with a focus on React, Angular, NodeJS, and Java offering a combination of cross-functional skills with 7+ years of commercial experience in Web Development and technical leadership experience. My expertise includes requirements gathering and analysis, business processes analysis and design, solution integration architecture, project architecture design, and deployment process setup.
 
 Skills, use only the labels "Languages and Frameworks", "OS & Platforms", "DBMS", "SCM, Build, CI/CD" and "Other",   example:
@@ -15,7 +15,7 @@ DBMS: MSSQL, Sequelize, Oracle/Hibernate;
 SCM, Build, CI/CD: Bitbucket/Github, Git, SVN; Npm/Bower, Babel, Webpack/Browserify, Grunt/Gulp, Ant, Maven; Codeship, TeamCity, Vagrant, Jenkins, Jira, Confluence;
 Other: OOP, SOLID, REST, Design Patterns, UI/UX Design, SOA, SPA; HTML5/CSS3, Flash/Flex, SCSS/LESS, Asp.Net Web Forms/Mvc; Ajax/Promises, Prototype/Closures, CORS, JSON/JSONP, RegExp.
 
-Education, example:
+Education, order the result from the newest to the oldest, example:
 National Technical University of Ukraine	2006 - 2012
 Degree, Major (can go on the 2nd line)
 Really long name of some university with very long name	2006 - 2012

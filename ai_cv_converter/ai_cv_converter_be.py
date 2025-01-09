@@ -28,6 +28,56 @@ with open("ai_cv_converter/main_prompt.txt", "r") as file:
 
 @functions_framework.http
 def get_file_and_add_prompt(request):
+    """
+    ---
+    post:
+      summary: Process a PDF file and generate HTML output
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file_receive:
+                  type: string
+                  format: binary
+                  description: The PDF file to be processed
+      responses:
+        '200':
+          description: Successfully processed the PDF and generated HTML output
+          content:
+            text/html:
+              schema:
+                type: string
+        '400':
+          description: Bad request, either no file provided or unsupported file type
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        '405':
+          description: Method not allowed, only POST method is allowed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        '500':
+          description: Internal server error while processing the PDF
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+    """
     if request.method != "POST":
         return jsonify({"error": "Only POST method is allowed"}), 405
 

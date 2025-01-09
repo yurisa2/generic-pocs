@@ -260,9 +260,11 @@
             <span style="color:#000000">SKILLS</span>
         </h2>
         {% for skill in skills %}
-        <p style="margin-bottom:10pt; text-align:left">
-            <strong>{{ skill.category }}:</strong> {{ skill.skills }}
-        </p>
+        {% if skill.skills %}
+            <p style="margin-bottom:10pt; text-align:left">
+                <strong>{{ skill.category }}:</strong> {{ skill.skills }}
+            </p>
+        {% endif %}
         {% endfor %}
 
         <h2>
