@@ -222,74 +222,75 @@
         <div style="clear:both">
             <p class="Title"
                 style="margin-bottom:0pt; text-align:right; page-break-inside:auto; widows:0; orphans:0; font-size:16pt">
-                <a id="_35nkun2"></a><span style="color:#000000"> </span><img
-                    src="https://storage.googleapis.com/public-yuri-sa/1736288723_resume-template-3.0-1.png" width="152" height="57"
-                    alt="" style="margin:9pt; float:left; position:relative" />
+                <span style="color:#000000"> </span><img
+                    src="https://storage.googleapis.com/public-yuri-sa/ai_cv_converter_header.png"
+                    alt="" style="margin:0pt; float:left; position:relative; width:100%; height:auto;" />
+            </p>
+            <!--
+            <p class="Title" style="margin-bottom:0pt; text-align:right; page-break-inside:auto; widows:0; orphans:0">
+                <span style="font-size:16pt; color:#000000"> {{ name }}</span>
             </p>
             <p class="Title" style="margin-bottom:0pt; text-align:right; page-break-inside:auto; widows:0; orphans:0">
-                <a id="_1ksv4uv"></a><span style="font-size:16pt; color:#000000"> {{ name }}</span>
-           
-            </p>
-            <p class="Title" style="margin-bottom:0pt; text-align:right; page-break-inside:auto; widows:0; orphans:0">
-                <a id="_44sinio"></a><span style="font-size:12pt; font-weight:normal; color:#000000">{{ seniority_level }} {{ role }}</span>
+                <span style="font-size:12pt; font-weight:normal; color:#000000">{{ seniority_level }} {{ role }}</span>
             </p>
             <p>
                 &#xa0;
             </p>
+            -->
         </div>
         <p class="Title">
-            <a id="_gjdgxs"></a><span style="color:#000000"> {{ name }}</span>
+            <span style="color:#000000"> {{ name }}</span>
         </p>
         <p class="Subtitle" style="margin-bottom:0pt">
-            <a id="_30j0zll"></a><span style="line-height:115%; font-size:14pt">{{ seniority_level }} {{ role }}</span>
+            <span style="line-height:115%; font-size:14pt">{{ seniority_level }} {{ role }}</span>
         </p>
         <h2>
-            <a id="_1fob9te"></a>
+            
         </h2>
         <div style="text-align:center">
             <hr style="width:100%; height:1.5pt; text-align:justify" />
         </div>
         <h2>
-            <a id="_3znysh7"></a><span style="color:#000000">SUMMARY</span>
+            <span style="color:#000000">SUMMARY</span>
         </h2>
         <p>
             {{ summary }}
         </p>
         <h2>
-            <a id="_2et92p0"></a><span style="color:#000000">SKILLS</span>
+            <span style="color:#000000">SKILLS</span>
         </h2>
         {% for skill in skills %}
-        <p style="margin-bottom:0pt; text-align:left">
+        <p style="margin-bottom:10pt; text-align:left">
             <strong>{{ skill.category }}:</strong> {{ skill.skills }}
         </p>
         {% endfor %}
 
         <h2>
-            <a id="_tyjcwt"></a><span style="color:#000000">EDUCATION</span>
+            <span style="color:#000000">EDUCATION</span>
         </h2>
         <ul class="awlist1" style="margin:0pt; padding-left:0pt">
             {% for edu in education %}
-            <li style="margin-left:22.5pt; margin-bottom:0pt; text-indent:-18pt; color:#ff9900">
-                <span style="width:11.36pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;</span>
+            <li style="margin-left:20pt; margin-bottom:10pt; text-indent:-18pt; color:#ff9900">
+                <span style="width:12pt; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;</span>
                 <strong><span style="color:#000000">{{ edu.institution }}</span></strong>
-                <span style="width:198.62pt; text-indent:0pt; color:#000000; display:inline-block">&#xa0;</span>
-                <span style="color:#999999">{{ edu.years }}</span><br />
+                <span style="width:200pt; text-indent:0pt; color:#000000; display:inline-block">&#xa0;</span>
+                <span style="color:#999999; float:right">{{ edu.years }}</span><br />
                 <span style="color:#999999">{{ edu.degree }}</span>
             </li>
             {% endfor %}
         </ul>
         {% if certifications %}
         <h2>
-            <a id="_3dy6vkm"></a><span style="color:#000000">CERTIFICATIONS</span>
+            <span style="color:#000000">CERTIFICATIONS</span>
         </h2>
         <ul class="awlist2" style="margin:0pt; padding-left:0pt">
 
             {% for certification in certifications %}
-            <li style="margin-left:22.5pt; margin-bottom:0pt; text-indent:-18pt; color:#ff9900">
+            <li style="margin-left:20pt; margin-bottom:10pt; text-indent:-18pt; color:#ff9900">
             <span
-                style="width:11.36pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+                style="width:12pt; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
             </span><strong><span style="color:#000000">{{ certification.name }} </span></strong><span
-                style="width:284.18pt; text-indent:0pt; color:#000000; display:inline-block">&#xa0;</span><span
+                style="width:280pt; text-indent:0pt; color:#000000; display:inline-block">&#xa0;</span><span
                 style="color:#999999">{{ certification.year }}</span><br />
             </li>
             {% endfor %}
@@ -298,31 +299,28 @@
         {% endif %}
 
         <h2>
-            <a id="_1t3h5sf"></a><span style="color:#000000">EMPLOYMENT HISTORY</span>
+            <span style="color:#000000">EMPLOYMENT HISTORY</span>
         </h2>
 
         {% for job in employment_history %}
         <h3 style="margin-right:0pt">
-            <a id="_3rdcrjn"></a>{{ job.company }}, {{ job.position }}<span style="width:202.72pt; display:inline-block">&#xa0;</span><span style="font-weight:normal; color:#999999">{{ job.years }}</span>
+            {{ job.company }}, {{ job.position }}<span style="width:200pt; display:inline-block">&#xa0;</span><span style="font-weight:normal; color:#999999; float:right">{{ job.years }}</span>
         </h3>
         <p>
-            
             <strong><span style="color:#ff9900">{{ job.company }}</span></strong> {% if job.description %}- {{ job.description }}  {% endif %}
-           
         </p>
         {% if job.activities_responsabilities %}
         <h4 style="text-align:justify">
-            <a id="_26in1rg"></a><strong>Activities and responsibilities:</strong>
+            <strong>Activities and responsibilities:</strong>
         </h4>
         {% endif %}
         <ul class="awlist4" style="margin:0pt; padding-left:0pt">
             {% for activity in job.activities_responsabilities %}
-            <li style="margin-left:36pt; margin-bottom:0pt; text-indent:-18pt; color:#ff9900">
-            <span style="width:11.36pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;</span><span style="color:#000000">{{ activity }}</span>
+            <li style="margin-left:36pt; margin-bottom:10pt; text-indent:-18pt; color:#ff9900">
+            <span style="width:12pt; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;</span><span style="color:#000000">{{ activity }}</span>
             </li>
             {% endfor %}
         </ul>
         {% endfor %}
 </body>
-
 </html>

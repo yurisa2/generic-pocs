@@ -73,12 +73,14 @@ def get_file_and_add_prompt(request):
 
             text = text.replace("```json", "").replace("```", "").replace("\n", "").replace("\r", "").replace("\t", "")
 
-            print("text", text)
+            with open("llm_response.json", "w") as response_file:
+                response_file.write(text)
 
             # Render the template with the JSON data
             output = template.render(json.loads(text))
 
-            print("output", output)
+            with open("generated_output.html", "w") as response_file:
+                response_file.write(output)
 
             return output, 200
 
