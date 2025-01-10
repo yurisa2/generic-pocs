@@ -30,8 +30,7 @@ Microsoft MCPD Windows 4 	2012
 SCRUM Alliance ­Certified SCRUM Master	2010
 (Transcript: 952394; Access Code: 111111111)
 
-EMPLOYMENT HISTORY, for each employment history, get the company, position or role, years of work, general description of the job, 
-technologies used and the activities and responabilities
+EMPLOYMENT HISTORY, for each employment history, get the company, position or role, years of work, general description of the job, technologies used and the activities and responsabilities
 Keep the list of responsibilities to at most 4 line items for old projects
 Mention something really cool or relevant to the target position
 Avoid boilerplate responsibilities unless they match what’s needed

@@ -304,24 +304,31 @@
         </h2>
 
         {% for job in employment_history %}
-        <h3 style="margin-right:0pt">
-            {{ job.company }}, {{ job.position }}<span style="width:200pt; display:inline-block">&#xa0;</span><span style="font-weight:normal; color:#999999; float:right">{{ job.years }}</span>
-        </h3>
-        <p>
-            <strong><span style="color:#ff9900">{{ job.company }}</span></strong> {% if job.description %}- {{ job.description }}  {% endif %}
-        </p>
-        {% if job.activities_responsabilities %}
-        <h4 style="text-align:justify">
-            <strong>Activities and responsibilities:</strong>
-        </h4>
-        {% endif %}
-        <ul class="awlist4" style="margin:0pt; padding-left:0pt">
-            {% for activity in job.activities_responsabilities %}
-            <li style="margin-left:36pt; margin-bottom:10pt; text-indent:-18pt; color:#ff9900">
-            <span style="width:12pt; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;</span><span style="color:#000000">{{ activity }}</span>
-            </li>
-            {% endfor %}
-        </ul>
+                <h3 style="margin-right:0pt">
+                    {{ job.company }}, {{ job.position }}<span style="width:200pt; display:inline-block">&#xa0;</span><span style="font-weight:normal; color:#999999; float:right">{{ job.years }}</span>
+                </h3>
+                <p>
+                    <strong><span style="color:#ff9900">{{ job.company }}</span></strong> {% if job.description %}- {{ job.description }}  {% endif %}
+                </p>
+            {% if job.activities_responsabilities %}
+                <h4 style="text-align:justify">
+                    <strong>Activities and responsibilities:</strong>
+                </h4>
+            {% endif %}
+            <ul class="awlist4" style="margin:0pt; padding-left:0pt">
+                {% for activity in job.activities_responsabilities %}
+                <li style="margin-left:36pt; margin-bottom:10pt; text-indent:-18pt; color:#ff9900">
+                <span style="width:12pt; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;</span><span style="color:#000000">{{ activity }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+
+            {% if job.technologies %}
+                <h4 style="text-align:justify">
+                    <strong>Technologies:</strong> - {{ job.technologies }}
+                </h4>
+            {% endif %}
+
         {% endfor %}
 </body>
 </html>
