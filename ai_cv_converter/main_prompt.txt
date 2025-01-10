@@ -1,13 +1,15 @@
-This is a CV file I need to extract the following information from the CV:
+
+
+This is the resume (Curriculum vitae)  file I need to extract the following information from the it, all information should be in english aside from names (company names, education institution names), anything else should be in english, like dates, activities and responsabilities, job titles, skills, :
 
 Name
-Seniority Level, Junior, middle or Senior
-Role example as: Software Engineer, Full Stack Developer, Frontend Developer, Backend Developer, DevOps Engineer, Data Scientist, Data Analyst, Data Engineer, Machine Learning Engineer, AI Engineer, Cloud Engineer, Cloud Architect, Site Reliability Engineer (SRE), QA Engineer, QA Automation Engineer, QA Tester, QA Analyst, QA Lead, QA Manager, QA Director, QA VP
+Seniority:  Level, Junior, middle or Senior
+Role, without the seniority, only the role, examples of role: Software Engineer, Full Stack Developer, Frontend Developer, Backend Developer, DevOps Engineer, Data Scientist, Data Analyst, Data Engineer, Machine Learning Engineer, AI Engineer, Cloud Engineer, Cloud Architect, Site Reliability Engineer (SRE), QA Engineer, QA Automation Engineer, QA Tester, QA Analyst, QA Lead, QA Manager, QA Director, QA VP
 
-Create a summary of the candidates professional life, here is an example, make it third person speech:
+Create a summary of the candidates professional life, here is an example, make it third person speech, use only the first name on the summary to give a more human feel to it. Example of summary:
 A highly skilled Lead Software Engineer with a focus on React, Angular, NodeJS, and Java offering a combination of cross-functional skills with 7+ years of commercial experience in Web Development and technical leadership experience. My expertise includes requirements gathering and analysis, business processes analysis and design, solution integration architecture, project architecture design, and deployment process setup.
 
-Skills, use only the labels "Languages and Frameworks", "OS & Platforms", "DBMS", "SCM, Build, CI/CD" and "Other",   example:
+Skills, use only the labels "Languages and Frameworks", "OS & Platforms", "DBMS", "SCM, Build, CI/CD" and "Other",   example of skills:
 Languages and Frameworks: JavaScript/EcmaScript 5/6/7, TypeScript, C#, SQL, Java, Flash/Flex, NodeJS, React/Redux, AngularJS, Common/Require, FabricJS, jQuery/jQueryUI, NightmareJS, PhantomJS, Electron, Twitter Bootstrap, OpentypeJS, JSE/JEE;
 
 OS & Platforms: MacOS, Linux, Windows; AWS;
@@ -15,20 +17,27 @@ DBMS: MSSQL, Sequelize, Oracle/Hibernate;
 SCM, Build, CI/CD: Bitbucket/Github, Git, SVN; Npm/Bower, Babel, Webpack/Browserify, Grunt/Gulp, Ant, Maven; Codeship, TeamCity, Vagrant, Jenkins, Jira, Confluence;
 Other: OOP, SOLID, REST, Design Patterns, UI/UX Design, SOA, SPA; HTML5/CSS3, Flash/Flex, SCSS/LESS, Asp.Net Web Forms/Mvc; Ajax/Promises, Prototype/Closures, CORS, JSON/JSONP, RegExp.
 
-Education, order the result from the newest to the oldest, example:
+Education, order the result from the newest to the oldest, example of education:
 National Technical University of Ukraine	2006 - 2012
 Degree, Major (can go on the 2nd line)
 Really long name of some university with very long name	2006 - 2012
 Degree, Major (can go on the 2nd line)
 
-Certifications, example:
+Certifications, this is ample, only list them if the candidate explicitly cites this,  example of certifications:
 
 Microsoft MCPD Windows 4 	2012
 (Transcript: 952394; Access Code: 111111111)
 SCRUM Alliance ­Certified SCRUM Master	2010
 (Transcript: 952394; Access Code: 111111111)
 
-EMPLOYMENT HISTORY, for each employment history, get the company, position or role, years of work, general description of the job, technologies used and the activities and responabilities example:
+EMPLOYMENT HISTORY, for each employment history, get the company, position or role, years of work, general description of the job, 
+technologies used and the activities and responabilities
+Keep the list of responsibilities to at most 4 line items for old projects
+Mention something really cool or relevant to the target position
+Avoid boilerplate responsibilities unless they match what’s needed
+See the example projects below for projects without technologies or list of responsibilities
+
+Employement examples:
 AgileEngine, Lead Fullstack Developer	2017 - Present
 Mi9 Retail is the premier provider of enterprise software including merchandising, business intelligence, and store operations for large and medium retailers. Mi9 Merchant is a state-of-the-art merchandise management system that provides meaningful visibility into shopper behavior, product performance, and vendor reliability. Designed for complex inventory and high SKU volume to address your extensive transaction processing needs, this solution delivers one source of information to support buying, pricing, inventory management, and inventory valuation.
 Activities and responsibilities:
@@ -47,10 +56,12 @@ Technologies:  JavaScript, TypeScript, AngularJS 1, ReactJS, Redux, RXJS, SCSS, 
 Company Name, Position Name	From Year - To Year
 Project Name - [position name for a] short description of the project for projects not similar to the target project. Provide a longer description for the projects that are relevant to the target customer.
 Activities and responsibilities:
-Keep the list of responsibilities to at most 4 line items for old projects
-Mention something really cool or relevant to the target position
-Avoid boilerplate responsibilities unless they match what’s needed
-See the example projects below for projects without technologies or list of responsibilities
+Designed and developed a scalable web service in PHP for real-time data processing, handling over 100
+applications per week, which improved system efficiency by 20%.
+• Led a cross-functional team of developers and administrators in a major software lifecycle overhaul,
+resulting in a 25% shorter development cycle.
+• Managed database schema design and optimizations for MySQL and MSSQL databases, achieving a
+reduction in data retrieval times by up to 30%.
 Technologies:  JavaScript, TypeScript, AngularJS 1, ReactJS, Redux, RXJS, SCSS, CSS3, NodeJS, Babel, Webpack, Jest, NPM/Bash scripts, MSSQL.
 
 Victor - Fly Smarter. Development of mobile application for charter requests.
@@ -65,3 +76,5 @@ Foodora - building a mobile app for the food delivery service. Senior iOS Develo
 
 Internal Educational System - Lead Engineer for a system that allows users to check their lab works. The main idea is to run unit tests against the uploaded source files and return useful information about the results. The main requirement was to run test scenarios asynchronously. For this purpose, we use RabbitMQ as a communication protocol. The system is designed in microservices architecture with the aim of Spring Boot framework. The frontend part is built on Grails. Gradle is used for building sources and running tests.
 Technologies:  JavaScript, TypeScript, AngularJS 1, ReactJS, Redux, RXJS, SCSS, CSS3, NodeJS, Babel, Webpack, Jest, NPM/Bash scripts, MSSQL.
+
+

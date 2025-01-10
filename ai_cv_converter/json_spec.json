@@ -2,27 +2,34 @@
     "type": "object",
     "properties": {
         "name": {
-            "type": "string"
+            "type": "string",
+            "description": "The full name of the individual."
         },
         "seniority_level": {
-            "type": "string"
+            "type": "string",
+            "description": "The seniority level of the individual, such as 'Junior', 'Mid-level', 'Senior', or 'Lead'."
         },
         "role": {
-            "type": "string"
+            "type": "string",
+            "description": "The primary professional role or title of the individual, such as 'Software Engineer' or 'Product Manager'."
         },
         "summary": {
-            "type": "string"
+            "type": "string",
+            "description": "A brief professional summary or career overview."
         },
         "skills": {
             "type": "array",
+            "description": "A list of skills categorized by type.",
             "items": {
                 "type": "object",
                 "properties": {
                     "category": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "The category of skills, such as 'Programming Languages' or 'Tools'."
                     },
                     "skills": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "A comma-separated list of specific skills within the category."
                     }
                 },
                 "required": [
@@ -33,17 +40,21 @@
         },
         "education": {
             "type": "array",
+            "description": "A list of educational qualifications.",
             "items": {
                 "type": "object",
                 "properties": {
                     "institution": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "The name of the educational institution."
                     },
                     "years": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "The duration of study, typically in the format 'YYYY-YYYY'."
                     },
                     "degree": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "The degree obtained, such as 'Bachelor of Science in Computer Science'."
                     }
                 },
                 "required": [
@@ -55,32 +66,53 @@
         },
         "certifications": {
             "type": "array",
+            "description": "A list of certifications achieved by the individual.",
             "items": {
-                "type": "object"
+                "type": "object",
+                "properties": {
+                    "certification": {
+                        "type": "string",
+                        "description": "The name of the certification."
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "A brief description of the certification."
+                    }
+                },
+                "required": [
+                    "certification"
+                ]
             }
         },
         "employment_history": {
             "type": "array",
+            "description": "A detailed history of past employment.",
             "items": {
                 "type": "object",
                 "properties": {
                     "company": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "The name of the company where the individual worked."
                     },
                     "position": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "The job title or position held at the company."
                     },
                     "years": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "The duration of employment, typically in the format 'YYYY-YYYY'."
                     },
                     "description": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "A brief description of the role and responsibilities."
                     },
                     "technologies": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "A comma-separated list of technologies used in the role."
                     },
                     "activities_responsabilities": {
                         "type": "array",
+                        "description": "A list of key activities and responsibilities performed in the role.",
                         "items": {
                             "type": "string"
                         }

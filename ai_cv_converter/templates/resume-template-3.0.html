@@ -289,11 +289,10 @@
 
             {% for certification in certifications %}
             <li style="margin-left:20pt; margin-bottom:10pt; text-indent:-18pt; color:#ff9900">
-            <span
-                style="width:12pt; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
-            </span><strong><span style="color:#000000">{{ certification.name }} </span></strong><span
-                style="width:280pt; text-indent:0pt; color:#000000; display:inline-block">&#xa0;</span><span
-                style="color:#999999">{{ certification.year }}</span><br />
+            <span style="width:12pt; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;</span>
+            <strong><span style="color:#000000">{{ certification.certification }}</span></strong>
+            {% if certification.description %} - <span style="color:#000000">{{ certification.description }}</span>{% endif %}
+            <br />
             </li>
             {% endfor %}
 
