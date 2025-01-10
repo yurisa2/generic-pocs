@@ -168,8 +168,6 @@ def convert_html_to_docx(request):
 
     html_content = request.json.get("html_content")
 
-    
-
     converter = HtmlToDocx()
     if html_content is None:
         return jsonify({"error": "No HTML content provided"}), 400
